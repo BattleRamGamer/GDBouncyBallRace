@@ -29,6 +29,7 @@ public class EnemyChase : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            GameManager.Instance?.TriggerDeath();
             Debug.Log("Touching!");
             transform.Rotate(Vector3.up * 10);
             
