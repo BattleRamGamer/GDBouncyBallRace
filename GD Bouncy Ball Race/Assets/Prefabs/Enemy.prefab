@@ -154,7 +154,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28e5548b6dbd21349bebdd7b232dbc88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minMoveSpeed: 3
+  maxMoveSpeed: 15
+  minMoveSpeedDistance: 15
+  maxMoveSpeedDistance: 45
   moveSpeed: 3
+  player: {fileID: 0}
   isMoving: 0
 --- !u!54 &3720132841987082800
 Rigidbody:
