@@ -1,8 +1,11 @@
 using UnityEngine;
 
+
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private const string PLAYER_TAG = "Player";
 
+    public string getPlayerTag => PLAYER_TAG;
 
 
 
