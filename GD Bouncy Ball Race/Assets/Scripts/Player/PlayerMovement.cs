@@ -14,28 +14,26 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 _moveInput;
 
+    private bool isDead;
+
 
     private void Update()
     {
         
         CheckControls();
 
-
-
-
-
     }
 
     private void FixedUpdate()
     {
+        // Stop movement if the player is dead
+        if (isDead) return;
         ApplyMovement();
     }
 
 
     private void CheckControls()
     {
-
-        //desiredMovement.x = Input.GetAxisRaw("horizontal");
 
         _moveInput = InputSystem.actions["Move"].ReadValue<Vector2>();
 
@@ -51,6 +49,10 @@ public class PlayerMovement : MonoBehaviour
         rb.AddForce(desiredMovement * moveForce * Time.fixedDeltaTime);
     }
 
+    public void Die()
+    {
+        isDead = true;
+    }
 
 
 }

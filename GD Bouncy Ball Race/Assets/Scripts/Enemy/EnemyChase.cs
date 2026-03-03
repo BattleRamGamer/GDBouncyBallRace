@@ -80,7 +80,7 @@ public class EnemyChase : MonoBehaviour
         {
             GameManager.Instance?.TriggerDeath();
             Debug.Log("Player died!");
-            
+            player.GetComponent<PlayerMovement>().Die();
         }
     }
 
