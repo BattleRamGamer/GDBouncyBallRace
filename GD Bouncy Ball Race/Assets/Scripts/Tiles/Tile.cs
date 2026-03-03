@@ -6,8 +6,7 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    [SerializeField]public Tile[] tileList;
+
     [SerializeField] private int tileDifficulty;
     [SerializeField] private static int delayTime = 5;
     [SerializeField] private Collider despawnTriggerCollider;
@@ -27,7 +26,7 @@ public class Tile : MonoBehaviour
 
     public GameObject getTile()
     {
-        return tileList[Random.Range(0, tileList.Length)].gameObject;
+        return TileManager.Instance.GetRandomTile();
     }
 
     public void DestroyTile()

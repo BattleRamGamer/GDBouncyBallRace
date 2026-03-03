@@ -8,7 +8,12 @@ public class GameManager : MonoBehaviour
     public string getPlayerTag => PLAYER_TAG;
 
 
+    public enum Difficulty
+    {
+        Easy, Medium, Hard
+    }
 
+    public Difficulty difficulty;
 
 
     public static GameManager Instance;
