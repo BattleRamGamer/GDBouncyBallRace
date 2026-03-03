@@ -11,6 +11,7 @@ public class Tile : MonoBehaviour
     [SerializeField] private static int delayTime = 5;
     [SerializeField] private Collider despawnTriggerCollider;
     
+    public int getDifficulty => tileDifficulty;
     void Start()
     {
         

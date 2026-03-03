@@ -281,6 +281,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThickAndThinPoles
       objectReference: {fileID: 0}
+    - target: {fileID: 5611376221014267086, guid: 10c9503e331cc444c9eef39ba5a522e4, type: 3}
+      propertyPath: tileDifficulty
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
